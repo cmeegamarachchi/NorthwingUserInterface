@@ -36,6 +36,7 @@
             this.ribbonPageProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageHomeGroupGeneral = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.productsGridView = new NorthwindUserInterface.Desktop.Winforms.Modules.Products.ProductsGridView();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
@@ -101,12 +102,22 @@
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Location = new System.Drawing.Point(0, 141);
             this.splitContainerControl1.Name = "splitContainerControl1";
+            this.splitContainerControl1.Panel1.Controls.Add(this.productsGridView);
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(631, 356);
             this.splitContainerControl1.SplitterPosition = 444;
             this.splitContainerControl1.TabIndex = 1;
             this.splitContainerControl1.Text = "splitContainerControl1";
+            // 
+            // productsGridView
+            // 
+            this.productsGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.productsGridView.Location = new System.Drawing.Point(0, 0);
+            this.productsGridView.Name = "productsGridView";
+            this.productsGridView.ProductDetails = null;
+            this.productsGridView.Size = new System.Drawing.Size(444, 356);
+            this.productsGridView.TabIndex = 0;
             // 
             // ProductsView
             // 
@@ -125,13 +136,13 @@
         }
 
         #endregion
-
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         private DevExpress.XtraBars.BarButtonItem barButtonItemReloadProducts;
         private DevExpress.XtraBars.BarButtonItem barButtonItemNewProduct;
         private DevExpress.XtraBars.BarButtonItem barButtonItemEditProduct;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageProducts;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageHomeGroupGeneral;
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
+        private ProductsGridView productsGridView;
+        public DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
     }
 }

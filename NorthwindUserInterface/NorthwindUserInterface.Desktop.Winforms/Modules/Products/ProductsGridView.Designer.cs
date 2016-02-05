@@ -132,7 +132,6 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "ProductsGridView";
             this.Size = new System.Drawing.Size(731, 495);
-            this.Load += new System.EventHandler(this.ProductsGridView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDetailsBindingSource)).EndInit();
